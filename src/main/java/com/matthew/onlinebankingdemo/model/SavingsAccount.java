@@ -1,14 +1,14 @@
 package com.matthew.onlinebankingdemo.model;
 
 import java.math.BigDecimal;
-import java.util.List;
 
-public class PrimaryAccount {
+public class SavingsAccount {
+
     private Long id;
     private int accountNumber;
     private BigDecimal accountBalance;
 
-    private List<PrimaryTransaction> primaryTranactionList;
+    private List<SavingsTransaction> savingsTransactionList;
 
     public Long getId() {
         return id;
@@ -34,11 +34,11 @@ public class PrimaryAccount {
         this.accountBalance = accountBalance;
     }
 
-    public List<PrimaryTransaction> getPrimaryTranactionList() {
-        return primaryTranactionList;
+    public List<SavingsTransaction> getSavingsTransactionList() {
+        return savingsTransactionList;
     }
 
-    public void setPrimaryTranactionList(List<PrimaryTransaction> primaryTranactionList) {
-        this.primaryTranactionList = primaryTranactionList;
+    public void setSavingsTransactionList(List<SavingsTransaction> savingsTransactionList) {
+        this.savingsTransactionList = savingsTransactionList;
     }
 }
